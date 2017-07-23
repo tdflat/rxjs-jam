@@ -41,6 +41,7 @@ import * as fromSearch from './search';
 import * as fromBooks from './books';
 import * as fromCollection from './collection';
 import * as fromLayout from './layout';
+import * as fromPhotos from './photos';
 
 
 /**
@@ -53,6 +54,7 @@ export interface State {
   collection: fromCollection.State;
   layout: fromLayout.State;
   router: fromRouter.RouterState;
+  photos: fromPhotos.State;
 }
 
 
@@ -69,6 +71,7 @@ const reducers = {
   collection: fromCollection.reducer,
   layout: fromLayout.reducer,
   router: fromRouter.routerReducer,
+  photos: fromPhotos.reducer
 };
 
 const developmentReducer: ActionReducer<State> = compose(storeFreeze, combineReducers)(reducers);

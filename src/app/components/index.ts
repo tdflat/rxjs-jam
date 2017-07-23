@@ -9,6 +9,7 @@ import { BookDetailComponent } from './book-detail';
 import { BookPreviewComponent } from './book-preview';
 import { BookPreviewListComponent } from './book-preview-list';
 import { BookSearchComponent } from './book-search';
+import { PhotoSearchComponent } from './photo-search';
 import { LayoutComponent } from './layout';
 import { NavItemComponent } from './nav-item';
 import { SidenavComponent } from './sidenav';
@@ -23,6 +24,7 @@ export const COMPONENTS = [
   BookPreviewComponent,
   BookPreviewListComponent,
   BookSearchComponent,
+  PhotoSearchComponent,
   LayoutComponent,
   NavItemComponent,
   SidenavComponent,

@@ -14,6 +14,7 @@ import { MaterialModule } from '@angular/material';
 import { ComponentsModule } from './components';
 import { BookEffects } from './effects/book';
 import { CollectionEffects } from './effects/collection';
+import { PhotoEffects } from './effects/photo';
 import { BookExistsGuard } from './guards/book-exists';
 
 import { AppComponent } from './containers/app';
@@ -28,6 +29,7 @@ import { GoogleBooksService } from './services/google-books';
 import { routes } from './routes';
 import { reducer } from './reducers';
 import { schema } from './db';
+import {LoginPageComponent} from './containers/login-page';
 
 
 
@@ -75,6 +77,7 @@ import { schema } from './db';
      */
     EffectsModule.run(BookEffects),
     EffectsModule.run(CollectionEffects),
+    EffectsModule.run(PhotoEffects),
 
     /**
      * `provideDB` sets up @ngrx/db with the provided schema and makes the Database
@@ -88,6 +91,7 @@ import { schema } from './db';
     SelectedBookPageComponent,
     ViewBookPageComponent,
     CollectionPageComponent,
+    LoginPageComponent,
     NotFoundPageComponent
   ],
   providers: [
